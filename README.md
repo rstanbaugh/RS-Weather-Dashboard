@@ -1,5 +1,5 @@
 # Challenge 6: Weather Dashboard
-##### by: Rich Stanbuagh <br />
+##### by: Rich Stanbaugh <br />
 
 
 ![Weather Dashboard](./assets/images/weather-dashboard-screenshot.png)
@@ -9,17 +9,26 @@ https://rstanbaugh.github.io/weather-dashboard/
 <br />
 
 ## Description
-Weather Dashboard is a web-base application that allows user to input a location and see the current weather as wella s a 5-day forcast.
+Weather Dashboard is a web-base application that allows user to input a location and see the current weather as well as a 5-day forecast.
 
 Features include:
-- Search by: city, state, county, zipcode or address
-- Maintains a history fo 10 unique serches
+- Search by entering: city, state, county, zip code or address into form inputs
+- Presented with current and forecast weather for the desired location, including:
+  - Icon depicting conditions
+  - Temperature / Feels-Like Temperature (current conditions)
+  - Wind conditions (including icon depicting direction for forecast weather)
+  - Humidity
+  - UV Index (current conditions) including a color-coded badge indicating: favorable, moderate or severe conditions.
+- Maintains a history of 10 unique searches
   - Most recent search to the top of the list
   - No duplicates in the list
-  - clicking on the search history triggers a new search and updates teh list
-- Icons for current and forcast weather
-- Wind direction icons for forecast weather
-- UV Index color-coded to display: favorable, moderate or severe conditions
+  - clicking on the search history triggers a new search and updates the list
+- Search history stored in local storage
+- Upon loading, the application loads:
+  - The search history weather info for the last-saved search
+  - Weather conditions for Miami, FL in case there is no storage history
+- The application uses the Position Stack API for geolocation
+- The application uses the Open Weather API for weather information
 <br />
 <br />
 
@@ -27,7 +36,7 @@ Features include:
 * HTML <br />
 * CSS <br />
 * Javascript <br />
-* Open Weather API (current weather, 5-day forcast and UV information)
+* Open Weather API (current weather, 5-day forecast and UV information)
 * Position Stack API (geo-locating locations)
 * jQuery API
 * Moment.js API
